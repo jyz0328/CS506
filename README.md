@@ -21,17 +21,17 @@ Finn Jensen, fjensen@bu.edu
 - Key Question 1:Establish how many students and employees are impacted by each current water filling station and kitchen.
   - From our filtered water station and kitchen list `covered_floors.csv`, we found the mean and max foot traffic of these floors. This gives a rough idea of how many people each water filling station affects. 
 - Key Question 2:Establish a full list of the factors and criteria for installation of new filling stations.
-  - We separate the full list into the filter section and factor section. 
-    -Filter section: as I mentioned in base analysis before, with following exclusion:
-     Exclude covered floor (water station & kitchen floor)
-     Exclude Parking ,Housing, and Commercial buildings . For residential buildings we only consider large dorm-style residences 
-     Exclude dining hall floors
-     Now we get `uncovered_floors.csv` for further new station choosing.
-  -Factor section : We list the following four factors for installation of new filling station consideration.
-     Mean Density (Foot Traffic)
-     Max Density (Foot Traffic)
-     Air Condition (Mechanical Ventilation)
-     High Volume
+  - We separate the full list into the filter section and factor section.<br> 
+    Filter section: as I mentioned in base analysis before, with following exclusion:<br>
+     Exclude covered floor (water station & kitchen floor)<br>
+     Exclude Parking ,Housing, and Commercial buildings . For residential buildings we only consider large dorm-style residences<br> 
+     Exclude dining hall floors<br>
+     Now we get `uncovered_floors.csv` for further new station choosing.<br>
+    Factor section : We list the following four factors for installation of new filling station consideration.<br>
+     Mean Density (Foot Traffic)<br>
+     Max Density (Foot Traffic)<br>
+     Air Condition (Mechanical Ventilation)<br>
+     High Volume<br>
 - Map of proposed new stations?
   - We have an HTML file with the map of the top 15 candidates, viewable by a browser (see Datasets section).
 - How many people would have access to the new water bottle filling stations?
