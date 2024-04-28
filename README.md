@@ -83,9 +83,9 @@ Explanation about all the images and html files saved in [`visualization`](https
 
 ## Original Datsets
 The various CSV files are original data given by client, which are all in [`original_data`](https://github.com/BU-Spark/ds-bu-sustainability-water/tree/team-c_extension/sp24-team-c/original_data)
-- [`updated_densitymap_hourly_cleaned.csv`]（https://drive.google.com/drive/folders/11Zu-7h4pp9KWnJbkMMpTo6H_6xsmfzBb): This dataset is the original foot traffic sheet, since it is too large we do not put it into github, but it is required for running [`wifi_data_process.ipynb`] .
-- [`Bottle Fillers Inventory - ongoing.xlsx`]and [`Building and Kitchen List.xlsx`]  (https://github.com/BU-Spark/ds-bu-sustainability-water/tree/team-c_extension/sp24-team-c/original_data): Oringal existed bottle station data and kitchen data, these two data sheets are required for running `produce_kitchen_station_tables.ipynb` and `seperate_covered_floor_or_not.ipynb`
-- [`High Volume Event Spaces.xlsx - Sheet1.csv`](https://github.com/BU-Spark/ds-bu-sustainability-water/blob/team-c_extension/sp24-team-c/original_data/High%20Volume%20Event%20Spaces.xlsx%20-%20Sheet1.csv) : This file lists detail information about high volume event places and is required for running `seperate_covered_floor_or_not.ipynb`.
+- [`updated_densitymap_hourly_cleaned.csv`]（https://drive.google.com/drive/folders/11Zu-7h4pp9KWnJbkMMpTo6H_6xsmfzBb): This dataset records density count each hour for various BU floors, which can represent foot traffic, since it is too large we do not put it into github, but it is required for running [`wifi_data_process.ipynb`] .
+- [`Bottle Fillers Inventory - ongoing.xlsx`]and [`Building and Kitchen List.xlsx`]  (https://github.com/BU-Spark/ds-bu-sustainability-water/tree/team-c_extension/sp24-team-c/original_data): These two datasets include detailed information for places with existed bottle station and kitchen,including
+- [`High Volume Event Spaces.xlsx - Sheet1.csv`](https://github.com/BU-Spark/ds-bu-sustainability-water/blob/team-c_extension/sp24-team-c/original_data/High%20Volume%20Event%20Spaces.xlsx%20-%20Sheet1.csv) : This dataset lists all detailed information about high volume event places.
 
 ## New Datsets
 The various CSV files are created during our coding process, which are all in [`new_data`](https://github.com/BU-Spark/ds-bu-sustainability-water/tree/team-c_extension/sp24-team-c/new_data):
