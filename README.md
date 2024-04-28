@@ -18,10 +18,20 @@ Finn Jensen, fjensen@bu.edu
 - Now you can see all generated datasets and visualization files in [`new_data`](https://github.com/BU-Spark/ds-bu-sustainability-water/tree/team-c_extension/sp24-team-c/new_data) folder and [`visualization`](https://github.com/BU-Spark/ds-bu-sustainability-water/tree/team-c_extension/sp24-team-c/visualization) folder. To ensure better effect you can empty all files in these two folders before you run code.
  
 ## Base/Extended Questions Addressed
-- How many people are impacted by each water filling station?
-  - We found which floors have a water filling station and/or a kitchen, and the foot traffic (average and maximum through the day) of these floors (see Datasets section). This gives a rough idea of how many people each water filling station affects.
-- What factors should be considered for new water bottle filling stations?
-  - We consider foot traffic (average and maximum), existing locations of stations/kitchens, mechanical ventilation (air conditioning), and high volume spaces. First we exclude covered floors(existed water bottle station floors&kitchen floors), then we take a combination of the other 3 factors to determine how "good" each uncovered floor is (see Methods and Datasets sections). Besides, we also consider certain building type , for residential building we only remain large dormitory, we also exclude Parking & Commercial & Housing building type from consideration.
+- Key Question 1:Establish how many students and employees are impacted by each current water filling station and kitchen.
+  - From our filtered water station and kitchen list `covered_floors.csv`, we found the mean and max foot traffic of these floors. This gives a rough idea of how many people each water filling station affects. 
+- Key Question 2:Establish a full list of the factors and criteria for installation of new filling stations.
+  - We separate the full list into the filter section and factor section. 
+    -Filter section: as I mentioned in base analysis before, with following exclusion:
+     Exclude covered floor (water station & kitchen floor)
+     Exclude Parking ,Housing, and Commercial buildings . For residential buildings we only consider large dorm-style residences 
+     Exclude dining hall floors
+     Now we get `uncovered_floors.csv` for further new station choosing.
+  -Factor section : We list the following four factors for installation of new filling station consideration.
+     Mean Density (Foot Traffic)
+     Max Density (Foot Traffic)
+     Air Condition (Mechanical Ventilation)
+     High Volume
 - Map of proposed new stations?
   - We have an HTML file with the map of the top 15 candidates, viewable by a browser (see Datasets section).
 - How many people would have access to the new water bottle filling stations?
