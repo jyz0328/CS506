@@ -9,7 +9,7 @@ Finn Jensen, fjensen@bu.edu
 
 
 ## How to run code instruction
-- Step 0: Download all things in this branch, especially for all things in the `code` and `original_data` folder .
+- Step 0: Download all things in this branch, especially for all things in the [`code`](https://github.com/BU-Spark/ds-bu-sustainability-water/tree/team-c_extension/sp24-team-c/code) and [`original_data`](https://github.com/BU-Spark/ds-bu-sustainability-water/tree/team-c_extension/sp24-team-c/original_data) .
 - Step 0.5: Download `updated_densitymap_hourly_cleaned.csv`from https://drive.google.com/drive/folders/11Zu-7h4pp9KWnJbkMMpTo6H_6xsmfzBb, and put it into [original_folder], it is not included in this repo because it is very large. However it is our necessary file for running code.
 - Step 1: Now open `code` folder , run [`wifi_data_process.ipynb`] to produce the  processed wifi(foot traffic data) [`updated_wifi_data.csv`].
 - Step 2: Then run [`produce_kitchen_station_tables.ipynb`]to produce the processed kitchen data and existed water station data [`Kitchens.csv`] and [`Stations.csv`].
