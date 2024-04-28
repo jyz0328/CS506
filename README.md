@@ -33,18 +33,17 @@ Finn Jensen, fjensen@bu.edu
   - Air Condition (Mechanical Ventilation)
   - High Volume
 - Key Question 3:Determine criteria and factors for new, high-priority water filling station locations.
-  - As we explained in the key question 2, we make some filters and get uncovered_floors.csv and then take mean density, max density, air condition and high volume as factors. Then we build a weight score standard based on these factors , and select top 50 weight score floors from uncovered_floors.csv  and define them as new candidates. Here is the details about this weight score standard:
+  - As we explained in the key question 2, we make some filters and get `uncovered_floors.csv` and then take mean density, max density, air condition and high volume as factors. Then we build a weight score standard based on these factors , and select top 50 weight score floors from `uncovered_floors.csv`  and define them as new candidates. Here is the details about this weight score standard:
   - Here is the details about this weight score standard:
   - Weight for selecting new water bottle station = ( mean density × 1 + max density × 0.3 ) × volume factor × ventilation factor
   - Volume factor is: 10 if high volume, else 1 
   - Ventilation factor is: 1 if Mechanical Ventilation is 'Yes', 2 if Mechanical Ventilation is 'Partial', 3 if Mechanical Ventilation is 'No'
+  - Now we get `selected_candidates.csv` shows the new stations we select based on this weight score standard
 
-- How many people would have access to the new water bottle filling stations?
-  - Similar to the covered floors(existed water bottle station floors&kitchen floors), we found the foot traffic for floors without a water filling station nor a kitchen, which roughly estimates the imapct of each one.
+- Key Question 4:Establish how many students and employees would have access to each of the new filling stations.
+  - As we mentioned in the last question, we build a new weight standard for finding new stations and we get `selected_candidates.csv`. Mean and max density in this sheet is the estimation of how many students and employees would be impacted by proposed new filling stations.
 - How can we determine new, high priority water filling stations?
   - We use the same factors for determing candidates (foot traffic, ventilation, etc.) and weight them in a systematic way to determine a "goodness" score, which we used to determine the candidates given here but can also be used to predict how good future buildings/floors are for stations (see Methods section).
-- Determine criteria and factors for new, high-priority water filling station locations.
-  - For uncovered floors,as we mentioned in [What factors should be considered for new water bottle filling stations?], we consider foot traffic (average and maximum), existing locations of stations/kitchens, mechanical ventilation (air conditioning), and high volume spacesas criteria and factors. Specifically, we assign a weight to each building/floor based on the average/maximum foot traffic, the air ventilation status, and the markers for high volume spaces as follows: take the sum of the average foot traffic and 0.3 times the maximum traffic, multiply it by 1, 2, or 3 if the ventilation is fully present, partial, or absent, and rank high volume spaces as 10 weight. Also we filter some building types, for residential building we only remain large dormitory, we also exclude Parking & Commercial & Housing building type from consideration. We also exclude floors of dinning hall mannually. Dinning hall floors are also excludes directly.
 
 ## Methods
 We combine the data cleaning and analysis steps together in our various notebooks:
