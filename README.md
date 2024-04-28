@@ -19,7 +19,7 @@ Finn Jensen, fjensen@bu.edu
  
 ## Base/Extended Questions Addressed
 - Key Question 1:Establish how many students and employees are impacted by each current water filling station and kitchen.
-  - From our filtered water station and kitchen list `covered_floors.csv`, we found the mean and max foot traffic of these floors. This gives a rough idea of how many people each water filling station affects. 
+  - From our filtered water station and kitchen list [`covered_floors.csv`](https://github.com/BU-Spark/ds-bu-sustainability-water/blob/team-c_extension/sp24-team-c/new_data/covered_floors.csv), we found the mean and max foot traffic of these floors. This gives a rough idea of how many people each water filling station affects. 
 - Key Question 2:Establish a full list of the factors and criteria for installation of new filling stations.
   - We separate the full list into the filter section and factor section.<br> 
     Filter section: as I mentioned in base analysis before, with following exclusion:<br>
@@ -41,7 +41,7 @@ Finn Jensen, fjensen@bu.edu
   - Now we get [`selected_candidates.csv`](https://github.com/BU-Spark/ds-bu-sustainability-water/blob/team-c_extension/sp24-team-c/new_data/selected_candidates.csv) shows the new stations we select based on this weight score standard
 
 - Key Question 4:Establish how many students and employees would have access to each of the new filling stations.
-  - As we mentioned in the last question, we build a new weight standard for finding new stations and we get `selected_candidates.csv`. Mean and max density in this sheet is the estimation of how many students and employees would be impacted by proposed new filling stations.
+  - As we mentioned in the last question, we build a new weight standard for finding new stations and we get [`selected_candidates.csv`](https://github.com/BU-Spark/ds-bu-sustainability-water/blob/team-c_extension/sp24-team-c/new_data/selected_candidates.csv). Mean and max density in this sheet is the estimation of how many students and employees would be impacted by proposed new filling stations.
 - Key question 5:A geospatial map of new water filling stations highlighted by priority (page 21-22)
   - We build a html file called [`Top_15_candidates_map_by_weight.html`](https://github.com/BU-Spark/ds-bu-sustainability-water/blob/team-c_extension/sp24-team-c/visualization/top_15_candidates_map_by_weight.html). When we download this html file and open it, we can see a google map showing the location of top 15 new water stations highlighted by weights as priority. Top 1-5 are marked as green points, rank 6 -10 are marked as orange points , and rank 11-15 are marked as red points. 
   - When we click on these new station points, details of that point will show, including building address, building floor, weight score, building type and ranking. 
