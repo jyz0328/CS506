@@ -25,8 +25,8 @@ Finn Jensen, fjensen@bu.edu
     Filter section: as I mentioned in base analysis before, with following exclusion:<br>
   - Exclude covered floor (water station & kitchen floor)
   - Exclude Parking ,Housing, and Commercial buildings . For residential buildings we only consider large dorm-style residences 
-  - Exclude dining hall floors
-     Now we get `uncovered_floors.csv` for further new station choosing.<br>
+  - Exclude dining hall floors<br>
+     Now we get [`uncovered_floors.csv`](https://github.com/BU-Spark/ds-bu-sustainability-water/blob/team-c_extension/sp24-team-c/new_data/uncovered_floors.csv) for further new station choosing.<br>
     Factor section : We list the following four factors for installation of new filling station consideration.<br>
   - Mean Density (Foot Traffic)
   - Max Density (Foot Traffic)
@@ -38,12 +38,14 @@ Finn Jensen, fjensen@bu.edu
   - Weight for selecting new water bottle station = ( mean density × 1 + max density × 0.3 ) × volume factor × ventilation factor
   - Volume factor is: 10 if high volume, else 1 
   - Ventilation factor is: 1 if Mechanical Ventilation is 'Yes', 2 if Mechanical Ventilation is 'Partial', 3 if Mechanical Ventilation is 'No'
-  - Now we get `selected_candidates.csv` shows the new stations we select based on this weight score standard
+  - Now we get [`selected_candidates.csv`](https://github.com/BU-Spark/ds-bu-sustainability-water/blob/team-c_extension/sp24-team-c/new_data/selected_candidates.csv) shows the new stations we select based on this weight score standard
 
 - Key Question 4:Establish how many students and employees would have access to each of the new filling stations.
   - As we mentioned in the last question, we build a new weight standard for finding new stations and we get `selected_candidates.csv`. Mean and max density in this sheet is the estimation of how many students and employees would be impacted by proposed new filling stations.
-- How can we determine new, high priority water filling stations?
-  - We use the same factors for determing candidates (foot traffic, ventilation, etc.) and weight them in a systematic way to determine a "goodness" score, which we used to determine the candidates given here but can also be used to predict how good future buildings/floors are for stations (see Methods section).
+- Key question 5:A geospatial map of new water filling stations highlighted by priority (page 21-22)
+  - We build a html file called [`Top_15_candidates_map_by_weight.html`](https://github.com/BU-Spark/ds-bu-sustainability-water/blob/team-c_extension/sp24-team-c/visualization/top_15_candidates_map_by_weight.html). When we download this html file and open it, we can see a google map showing the location of top 15 new water stations highlighted by weights as priority. Top 1-5 are marked as green points, rank 6 -10 are marked as orange points , and rank 11-15 are marked as red points. 
+  - When we click on these new station points, details of that point will show, including building address, building floor, weight score, building type and ranking. 
+
 
 ## Methods
 We combine the data cleaning and analysis steps together in our various notebooks:
