@@ -32,8 +32,13 @@ Finn Jensen, fjensen@bu.edu
      Max Density (Foot Traffic)<br>
      Air Condition (Mechanical Ventilation)<br>
      High Volume<br>
-- Map of proposed new stations?
-  - We have an HTML file with the map of the top 15 candidates, viewable by a browser (see Datasets section).
+- Key Question 3:Determine criteria and factors for new, high-priority water filling station locations.
+  - As we explained in the key question 2, we make some filters and get uncovered_floors.csv and then take mean density, max density, air condition and high volume as factors. Then we build a weight score standard based on these factors , and select top 50 weight score floors from uncovered_floors.csv  and define them as new candidates. Here is the details about this weight score standard:
+  - Here is the details about this weight score standard:
+  - Weight for selecting new water bottle station = ( mean density × 1 + max density × 0.3 ) × volume factor × ventilation factor
+  - Volume factor is: 10 if high volume, else 1 
+  -Ventilation factor is: 1 if Mechanical Ventilation is 'Yes', 2 if Mechanical Ventilation is 'Partial', 3 if Mechanical Ventilation is 'No'
+
 - How many people would have access to the new water bottle filling stations?
   - Similar to the covered floors(existed water bottle station floors&kitchen floors), we found the foot traffic for floors without a water filling station nor a kitchen, which roughly estimates the imapct of each one.
 - How can we determine new, high priority water filling stations?
