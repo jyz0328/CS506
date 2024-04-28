@@ -23,21 +23,21 @@ Finn Jensen, fjensen@bu.edu
 - Key Question 2:Establish a full list of the factors and criteria for installation of new filling stations.
   - We separate the full list into the filter section and factor section.<br> 
     Filter section: as I mentioned in base analysis before, with following exclusion:<br>
-     Exclude covered floor (water station & kitchen floor)<br>
-     Exclude Parking ,Housing, and Commercial buildings . For residential buildings we only consider large dorm-style residences<br> 
-     Exclude dining hall floors<br>
+  - Exclude covered floor (water station & kitchen floor)
+  - Exclude Parking ,Housing, and Commercial buildings . For residential buildings we only consider large dorm-style residences 
+  - Exclude dining hall floors
      Now we get `uncovered_floors.csv` for further new station choosing.<br>
     Factor section : We list the following four factors for installation of new filling station consideration.<br>
-     Mean Density (Foot Traffic)<br>
-     Max Density (Foot Traffic)<br>
-     Air Condition (Mechanical Ventilation)<br>
-     High Volume<br>
+  - Mean Density (Foot Traffic)
+  - Max Density (Foot Traffic)
+  - Air Condition (Mechanical Ventilation)
+  - High Volume
 - Key Question 3:Determine criteria and factors for new, high-priority water filling station locations.
   - As we explained in the key question 2, we make some filters and get uncovered_floors.csv and then take mean density, max density, air condition and high volume as factors. Then we build a weight score standard based on these factors , and select top 50 weight score floors from uncovered_floors.csv  and define them as new candidates. Here is the details about this weight score standard:
   - Here is the details about this weight score standard:
   - Weight for selecting new water bottle station = ( mean density × 1 + max density × 0.3 ) × volume factor × ventilation factor
   - Volume factor is: 10 if high volume, else 1 
-  -Ventilation factor is: 1 if Mechanical Ventilation is 'Yes', 2 if Mechanical Ventilation is 'Partial', 3 if Mechanical Ventilation is 'No'
+  - Ventilation factor is: 1 if Mechanical Ventilation is 'Yes', 2 if Mechanical Ventilation is 'Partial', 3 if Mechanical Ventilation is 'No'
 
 - How many people would have access to the new water bottle filling stations?
   - Similar to the covered floors(existed water bottle station floors&kitchen floors), we found the foot traffic for floors without a water filling station nor a kitchen, which roughly estimates the imapct of each one.
